@@ -1,0 +1,6 @@
+@use "../styles/" as *;
+
+#timer {
+  border: 1rem solid red;
+  @include flex-container(center, center);
+}
