@@ -1,0 +1,5 @@
+@use "../scss/styles" as *;
+
+#timer-page {
+  @include flex-container(flex-start, center);
+}

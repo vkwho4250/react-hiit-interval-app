@@ -1,0 +1,12 @@
+@use "../../scss/styles" as *;
+
+#interval-display-container {
+  padding: 5% 0;
+  width: 25vw;
+}
+
+.interval-display {
+  @include flex-container(center, flex-start, column);
+  overflow-y: scroll;
+  @extend %scroll-no-display;
+}

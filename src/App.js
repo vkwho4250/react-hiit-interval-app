@@ -1,10 +1,10 @@
-import "./css/App.css";
-import Timer from "./components/Timer";
+import "./scss/App.scss";
+import TimerPage from "./pages/TimerPage";
 
 function App() {
   return (
     <div className="app dark-theme">
-      <Timer />
+      <TimerPage />
     </div>
   );
 }

@@ -4,3 +4,12 @@
   align-items: $align;
   flex-direction: $direction;
 }
+
+// @mixin intervalType($colour) {
+//   border-left: 1rem solid $colour;
+//   border-top: 1rem solid $colour;
+// }
+
+@mixin intervalFocus($colour) {
+  background: rgba($colour, 0.1);
+}

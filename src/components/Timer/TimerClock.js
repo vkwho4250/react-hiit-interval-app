@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { KeyboardArrowUp, KeyboardArrowDown } from "@material-ui/icons";
+import "./TimerClock.scss";
 
 export default function TimerClock() {
   const [firstStart, setFirstStart] = useState(true);

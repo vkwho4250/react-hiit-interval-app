@@ -1,6 +1,6 @@
-@use "../styles/" as *;
+@use "../../scss/styles" as *;
 
 #timer {
-  border: 1rem solid red;
   @include flex-container(center, center);
+  width: 70vw;
 }
