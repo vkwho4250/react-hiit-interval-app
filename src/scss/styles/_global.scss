@@ -12,6 +12,7 @@ html {
 
 body {
   font: 16rem "Barlow Condensed", sans-serif;
+  background: $darkest-blue;
 }
 
 .dark-theme {
@@ -46,4 +47,8 @@ button {
     background: $dark-blue;
     color: $light-blue;
   }
+}
+
+svg.m-ui-icon {
+  fill: white;
 }

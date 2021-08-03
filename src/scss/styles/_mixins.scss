@@ -13,3 +13,15 @@
 @mixin intervalFocus($colour) {
   background: rgba($colour, 0.1);
 }
+
+@mixin setHeaderStyle(
+  $size,
+  $weight: initial,
+  $spacing: initial,
+  $font-style: initial
+) {
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+  font-style: $font-style;
+}

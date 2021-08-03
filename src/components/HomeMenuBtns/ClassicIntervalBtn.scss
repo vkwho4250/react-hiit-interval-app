@@ -1,0 +1,66 @@
+@use "../../scss/styles" as *;
+
+.home-menu-btn {
+  width: 100%;
+  min-height: 200rem;
+  background: rgba(white, 0.1);
+  border-radius: 10rem;
+  margin-bottom: 30rem;
+  padding: 30rem 40rem;
+  font-style: italic;
+  cursor: pointer;
+  border-bottom: 10rem solid rgba($light-blue, 0);
+
+  &:hover {
+    border-bottom: 10rem solid rgba($light-blue, 1);
+  }
+
+  h2 {
+    @include setHeaderStyle(30rem, 700, 1rem, inherit);
+    margin: 0;
+  }
+
+  h3 {
+    @include setHeaderStyle(24rem, 700, 2rem, inherit);
+  }
+
+  ul {
+    padding-left: 20rem;
+  }
+
+  li {
+    list-style: none;
+    @include flex-container(flex-start, center);
+  }
+
+  .description {
+    margin: 20rem 0;
+  }
+}
+
+.btn-header-footer {
+  @include flex-container(flex-start, center);
+
+  .m-ui-icon {
+    margin-right: 10rem;
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .bookmark {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.btn-header {
+  padding-bottom: 5rem;
+  border-bottom: 3rem solid $light-blue;
+}
+
+.rounds {
+  .type-dot {
+    @extend %type-dot;
+    background: white;
+  }
+}
