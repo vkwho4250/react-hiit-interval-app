@@ -2,6 +2,7 @@ import React from "react";
 import "./HomePage.scss";
 import ClassicIntervalBtn from "../components/HomeMenuBtns/ClassicIntervalBtn";
 import DynamicTimerBtn from "../components/HomeMenuBtns/DynamicTimerBtn";
+import PresetSelector from "../components/HomeMenuBtns/Presets/PresetSelector";
 
 export default function HomePage() {
   return (
@@ -12,7 +13,7 @@ export default function HomePage() {
           <ClassicIntervalBtn />
           <DynamicTimerBtn />
         </div>
-        <div className="preset-container"></div>
+        <PresetSelector />
       </div>
     </div>
   );

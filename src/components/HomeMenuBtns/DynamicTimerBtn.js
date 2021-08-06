@@ -9,13 +9,15 @@ export default function DynamicTimerBtn() {
         <LowPriority className="m-ui-icon" />
         <h2>Dynamic Timer</h2>
       </div>
-      <div className="description">
-        <h3>Fully customizable interval timer</h3>
-        <p>Add, edit, and arrange intervals to your liking</p>
-      </div>
-      <div className="btn-header-footer">
-        <Bookmark className="m-ui-icon bookmark" />
-        <p>Save your custom timer as a preset</p>
+      <div className={`btn-details-container`}>
+        <div className="description">
+          <h3>Fully customizable interval timer</h3>
+          <p>Add, edit, and arrange intervals to your liking</p>
+        </div>
+        <div className="btn-header-footer">
+          <Bookmark className="m-ui-icon bookmark" />
+          <p>Save your custom timer as a preset</p>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,19 @@
+@use "../../../scss/styles/" as *;
+
+.preset-btn {
+  background: rgba(white, 0.1);
+  height: 50rem;
+  border-radius: 5rem;
+  padding: 10rem 20rem;
+  transition: all 0.25s ease-in;
+  border-bottom: 5rem solid rgba($light-blue, 0);
+
+  &:hover {
+    border-bottom: 5rem solid rgba($light-blue, 1);
+  }
+}
+
+.preset-btn-details {
+  @include flex-container(flex-start, baseline);
+  gap: 20rem;
+}
