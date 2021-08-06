@@ -1,0 +1,18 @@
+@use "../../scss/styles/" as *;
+
+.num-scroller {
+  background: rgba($darkest-blue, 0.5);
+  outline: none;
+  border: none;
+  border-radius: $set-border-radius;
+  height: 80rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  @extend %scroll-no-display;
+  width: 80rem;
+  text-align: center;
+}
+
+.num-box {
+  height: 80rem;
+}

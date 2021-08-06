@@ -1,38 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PresetSelector.scss";
 import PresetBtn from "./PresetBtn";
 
+import testPresets from "../../../testData";
+
 export default function PresetSelector() {
-  const testObject = {
-    user: "John",
-    presetName: "HIIT Jumping",
-    preset: [
-      {
-        type: "prep",
-        name: "prep",
-        timeInSeconds: 20,
-        timeFormatted: "0:20",
-      },
-      {
-        type: "work",
-        name: "work",
-        timeInSeconds: 60,
-        timeFormatted: "1:00",
-      },
-      {
-        type: "rest",
-        name: "rest",
-        timeInSeconds: 30,
-        timeFormatted: "0:30",
-      },
-      {
-        type: "cool",
-        name: "cool",
-        timeInSeconds: 10,
-        timeFormatted: "0:10",
-      },
-    ],
-  };
+  const [testing, setTesting] = useState(testPresets);
 
   return (
     <div className="preset-selector">
@@ -42,9 +15,9 @@ export default function PresetSelector() {
       <div className="preset-options"></div>
       <div className="preset-container">
         <div className="preset-grid-container">
-          <PresetBtn />
-          <PresetBtn />
-          <PresetBtn />
+          {testing.map((preset, index) => {
+            return <PresetBtn key={index} preset={preset} />;
+          })}
         </div>
       </div>
     </div>

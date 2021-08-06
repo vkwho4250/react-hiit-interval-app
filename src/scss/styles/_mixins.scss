@@ -14,7 +14,7 @@
   background: rgba($colour, 0.1);
 }
 
-@mixin setHeaderStyle(
+@mixin set-header-style(
   $size,
   $weight: initial,
   $spacing: initial,
@@ -25,4 +25,3 @@
   letter-spacing: $spacing;
   font-style: $font-style;
 }
-

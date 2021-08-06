@@ -1,3 +1,60 @@
+@use "./variables" as *;
+@use "./inheritance" as *;
+
 section {
   height: 100vh;
+}
+
+.page-header {
+  border-bottom: 5rem solid $light-blue;
+  font-style: italic;
+  margin-bottom: 50rem;
+
+  h1 {
+    font-size: 70rem;
+  }
+}
+
+.work {
+  .type-dot {
+    @extend %type-dot;
+    background: $interval-pink;
+  }
+
+  &.entry {
+    border-bottom: $set-border-radius solid $interval-pink;
+  }
+}
+
+.rest {
+  .type-dot {
+    @extend %type-dot;
+    background: $interval-green;
+  }
+
+  &.entry {
+    border-bottom: $set-border-radius solid $interval-green;
+  }
+}
+
+.prep {
+  .type-dot {
+    @extend %type-dot;
+    background: $interval-purple;
+  }
+
+  &.entry {
+    border-bottom: $set-border-radius solid $interval-purple;
+  }
+}
+
+.cool {
+  .type-dot {
+    @extend %type-dot;
+    background: $interval-blue;
+  }
+
+  &.entry {
+    border-bottom: $set-border-radius solid $interval-blue;
+  }
 }

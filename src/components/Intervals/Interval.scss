@@ -62,31 +62,3 @@
   padding-left: 20rem;
   @include flex-container(flex-start, center);
 }
-
-.work {
-  .type-dot {
-    @extend %type-dot;
-    background: $interval-pink;
-  }
-}
-
-.rest {
-  .type-dot {
-    @extend %type-dot;
-    background: $interval-green;
-  }
-}
-
-.prep {
-  .type-dot {
-    @extend %type-dot;
-    background: $interval-purple;
-  }
-}
-
-.cool {
-  .type-dot {
-    @extend %type-dot;
-    background: $interval-blue;
-  }
-}

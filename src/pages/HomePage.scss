@@ -1,13 +1,11 @@
 @use "../scss/styles" as *;
 
 #home-page {
-  width: 100vw;
-  min-height: 100vh;
-  padding: 5vh 10vw;
+  @extend %page-layout;
   @include flex-container(flex-start, center, column);
 
   h1 {
-    @include setHeaderStyle(50rem);
+    @include set-header-style(50rem);
   }
 }
 
@@ -16,15 +14,14 @@
   width: 100%;
   display: grid;
   grid-template-columns: 500rem 1fr;
-  border: 1rem solid red;
 
   h2 {
-    @include setHeaderStyle(30rem, 700, 1rem, inherit);
+    @include set-header-style(30rem, 700, 1rem, inherit);
     margin: 0;
   }
 
   h3 {
-    @include setHeaderStyle(24rem, 700, 2rem, inherit);
+    @include set-header-style(24rem, 700, 2rem, inherit);
   }
 }
 
